@@ -42,8 +42,13 @@
         <button v-if="players[playerId]" @click="raiseCurrentBid()">
           Raise current bid!
         </button>
+<<<<<<< HEAD
         <p v-if="players[playerId]"> Current highest bid: {{ players[playerId].bidArray.length }} </p>
         <p v-if="players[playerId]"> Current test: {{ bidArray }} </p>
+=======
+        <!--<div v-for="key in room.bidArray" :key="key"/> </div>-->
+	
+>>>>>>> 9c7c040d520edc6e7be07e4383546ff99f54aeb1
         <CollectorsAuctionActions v-if="players[playerId]"
         :labels="labels"
         :player="players[playerId]"

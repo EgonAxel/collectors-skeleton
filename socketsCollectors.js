@@ -89,8 +89,8 @@ function sockets(io, socket, data) {
     });
 
     socket.on('collectorsRaiseCurrentBid', function(d) {
-      io.to(d.roomId).emit('collectorsBidRaised',
-      data.raiseCurrentBid(d.roomId, d.playerId)
+	io.to(d.roomId).emit('collectorsBidRaised',
+			     data.raiseCurrentBid(d.roomId, d.playerId)
       );
     });
 

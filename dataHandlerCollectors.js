@@ -310,12 +310,21 @@ Data.prototype.fakeMoreMoney = function (roomId, playerId) {
 Data.prototype.raiseCurrentBid = function (roomId, playerId) {
   let room = this.rooms[roomId];
   if (typeof room !== 'undefined') {
+<<<<<<< HEAD
     console.log("funktionen körs");
     room.bidArray.push(playerId);
     room.players[playerId].bidArray.push(playerId);
       console.log(room.bidArray);
       console.log("Current leading bid: ",room.bidArray.length,"$" );
     return room.players;
+=======
+      console.log("funktionen körs");
+      room.bidArray.push(playerId);
+      console.log(room.bidArray);
+      console.log("Current leading bid: ",room.bidArray.length,"$" );
+      
+      
+>>>>>>> 9c7c040d520edc6e7be07e4383546ff99f54aeb1
   }
   else return [];
 }
