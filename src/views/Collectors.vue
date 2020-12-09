@@ -42,7 +42,8 @@
         <button v-if="players[playerId]" @click="raiseCurrentBid()">
           Raise current bid!
         </button>
-        {{bidArray}}
+        <p v-if="players[playerId]"> Current highest bid: {{ players[playerId].bidArray.length }} </p>
+        <p v-if="players[playerId]"> Current test: {{ bidArray }} </p>
         <CollectorsAuctionActions v-if="players[playerId]"
         :labels="labels"
         :player="players[playerId]"
@@ -283,7 +284,7 @@ export default {
           this.$store.state.socket.on('collectorsBidRaised',
           function(d) {
             console.log(d.playerId, "bid is raised");
-            this.bidArray = d.bidArray;
+            this.bidArray = d;
           }.bind(this));
 
 },
