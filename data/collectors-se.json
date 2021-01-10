@@ -3,12 +3,12 @@
 	"valueRaised": "Värde just nu",
 
 	"getSkill": "Skaffa en skicklighet",
-	"skillInfoWorkSkill": "Arbetar skicklighet: Tjäna 2$ varje gång du placerar en flaska i arbetsutrymmet",
-	"skillInfoCardSkill": "Kort skicklighet: Dra ett kort varje gång du placerar en flaska i arbetsutrymmet",
+	"skillInfoWorkSkill": "Arbetarskicklighet: Tjäna 2$ varje gång du placerar en flaska i arbetsutrymmet",
+	"skillInfoCardSkill": "Kortskicklighet: Dra ett kort varje gång du placerar en flaska i arbetsutrymmet",
 	"skillInfo5VP": "Få 5 VP om du har minst ett föremål av varje kategori vid spelets slut",
 	"skillInfoBottle": "Flaska: Få en ny flaska, du kan använda denna direkt",
-	"skillInfoAuction": "Auktion Intäkt: Tjäna 1$ varje gång en auktion startas av någon spelare",
-	"skillInfo1VP": "Få 1 VP för varje föremål av den spefifika kategorin vi spelets slut",
+	"skillInfoAuction": "Auktionintäkt: Tjäna 1$ varje gång en auktion startas av någon spelare",
+	"skillInfo1VP": "Få 1 VP för varje föremål av den spefifika kategorin vid spelets slut",
 
 	"raiseValue": "Öka ett värde",
 	"currentlyRaisedValues": "Nuvarande värden",
