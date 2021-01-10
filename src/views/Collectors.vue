@@ -1043,7 +1043,7 @@ footer a:visited {
   transition-timing-function: ease-in-out;
 }
 
-.function_buttons:hover,.ready:hover{
+.function_buttons:hover,.ready:hover {
   transform: scale(1.05);
   transition: 0.15s;
   transition-timing-function: ease-in-out;
