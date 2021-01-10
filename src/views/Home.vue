@@ -28,6 +28,11 @@
             Rules
           </button>
         </a>
+        <a class="intro">
+          <button class="intro" v-on:click="myTutorial()">
+            Tutorial
+          </button>
+        </a>
       </div>
 
       <div id="buttons_Se" style="display: none" opacity="0">
@@ -40,6 +45,11 @@
         <a class="rules" href="/rules_collectors.pdf" target="_blank">
           <button class="rules">
             Spelregler
+          </button>
+        </a>
+        <a class="intro">
+          <button class="intro" v-on:click="myTutorial()">
+            Introduktion
           </button>
         </a>
       </div>
@@ -66,6 +76,12 @@ export default {
         document.getElementById("buttons_En").style.display = "block";
         document.getElementById("buttons_Se").style.display = "none";
       },
+      myTutorial: function() {
+        window.open(
+        'https://www.youtube.com/watch?v=J8VHXwiblHo&feature=youtu.be',
+        '_blank' // <- This is what makes it open in a new window.
+      );
+    },
 
       displaySe: function () {
         document.getElementById("buttons_Se").style.display = "block";
@@ -124,6 +140,9 @@ a {
 .playerNumber {
   font-size: 1.25em;
   font-weight: 600;
+}
+.intro{
+font-weight: 600;
 }
 
 .rules {
