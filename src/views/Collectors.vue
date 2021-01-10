@@ -100,12 +100,12 @@
           </button>
         </div>
         <div class="buttons">
-          <button class="function_buttons">
-            {{ labels.rules }}
-              <a href="/rules_collectors.pdf" target="_blank">
+          <a href="/rules_collectors.pdf" target="_blank">
+            <button class="function_buttons">
+              {{ labels.rules }}
                 <img id="drawCard_button_img" src="images/drawCards.png">
-              </a>
-          </button>
+              </button>
+          </a>
         </div>
 
         <div>
