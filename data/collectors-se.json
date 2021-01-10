@@ -52,8 +52,8 @@
 	"return": "Tillbaka till startmenyn",
 
 	"playerBoard": "Spelarbräde",
-	"names": "Namn",
-	"hands": "Händer",
+	"names": "Spelarordning",
+	"hands": "Kort på hand",
 	"items": "Föremål",
 	"skills": "Skickligheter",
 	"income": "Inkomst",

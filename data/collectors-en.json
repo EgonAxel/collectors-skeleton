@@ -53,8 +53,8 @@
 	"return": "Return to the start menu",
 
 	"playerBoard": "Player board",
-	"names": "Names",
-	"hands": "Hands",
+	"names": "Player order",
+	"hands": "Cards on hand",
 	"items": "Items",
 	"skills": "Skills",
 	"income": "Income",

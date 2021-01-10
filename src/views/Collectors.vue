@@ -2,7 +2,7 @@
   <main>
     <div id="winnerWrap">
       <div id="winnerDiv">
-        <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 2">{{labels.congratulationsOne}} {{getWinner()[1]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
+        <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 2">{{labels.congratulationsOne}} <span style="font-size: 1.3em;"> {{getWinner()[1]}} </span> {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
         <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 3">{{labels.congratulationsMany}} {{getWinner()[1]}} {{labels.and}} {{getWinner()[2]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
         <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 4">{{labels.congratulationsMany}} {{getWinner()[1]}}, {{getWinner()[2]}} {{labels.and}} {{getWinner()[3]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
         <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 5">{{labels.congratulationsMany}} {{getWinner()[1]}}, {{getWinner()[2]}}, {{getWinner()[3]}} {{labels.and}} {{getWinner()[4]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
@@ -165,9 +165,10 @@
           <div id="AllPlayerIdDiv">
             <h3>{{labels.names}}</h3>
             <div class="playercards" v-for="(player, key) in playerIdArray" :key="'names'+key">
-              <p>{{ player }}</p>
+            <p> {{ player }}</p>
             </div>
           </div>
+
 
           <div id="AllPlayerHandsDiv">
             <h3>{{labels.hands}}</h3>
@@ -963,7 +964,7 @@ footer a:visited {
 #AllPlayerStatsDiv {
   align-self: center;
   display: grid;
-  grid-template-columns: 10% 15% 15% 15% 15% 10% 10% 10%;
+  grid-template-columns: 12.5% 12.5% 15% 15% 15% 10% 10% 10%;
   grid-template-rows: 100%;
   grid-template-areas:
   "AllPlayerIdDiv AllPlayerHandsDiv AllPlayerItemsDiv AllPlayerSkillsDiv AllPlayerIncomeDiv AllPlayerMoneyDiv AllPlayerBottlesDiv AllPlayerValueDiv"
