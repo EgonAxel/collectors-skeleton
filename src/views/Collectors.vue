@@ -459,7 +459,7 @@ export default {
 methods: {
   myTutorial: function() {
     window.open(
-    'https://youtube.com',
+    'https://www.youtube.com/watch?v=J8VHXwiblHo&feature=youtu.be',
     '_blank' // <- This is what makes it open in a new window.
   );
 },
