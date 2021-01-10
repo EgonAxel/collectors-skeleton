@@ -2,10 +2,17 @@
   <main>
     <div id="winnerWrap">
       <div id="winnerDiv">
-        <h3 v-if="activeRound === 5 && getWinner().length === 2">{{labels.congratulationsOne}} {{getWinner()[1]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
-        <h3 v-if="activeRound === 5 && getWinner().length === 3">{{labels.congratulationsMany}} {{getWinner()[1]}} {{labels.and}} {{getWinner()[2]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
-        <h3 v-if="activeRound === 5 && getWinner().length === 4">{{labels.congratulationsMany}} {{getWinner()[1]}}, {{getWinner()[2]}} {{labels.and}} {{getWinner()[3]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
-        <h3 v-if="activeRound === 5 && getWinner().length === 5">{{labels.congratulationsMany}} {{getWinner()[1]}}, {{getWinner()[2]}}, {{getWinner()[3]}} {{labels.and}} {{getWinner()[4]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
+        <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 2">{{labels.congratulationsOne}} {{getWinner()[1]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
+        <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 3">{{labels.congratulationsMany}} {{getWinner()[1]}} {{labels.and}} {{getWinner()[2]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
+        <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 4">{{labels.congratulationsMany}} {{getWinner()[1]}}, {{getWinner()[2]}} {{labels.and}} {{getWinner()[3]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
+        <h3 class="winnerNames" v-if="activeRound === 5 && getWinner().length === 5">{{labels.congratulationsMany}} {{getWinner()[1]}}, {{getWinner()[2]}}, {{getWinner()[3]}} {{labels.and}} {{getWinner()[4]}} {{labels.whoWon}} {{getWinner()[0]}} {{labels.points}}</h3>
+        <div id="returnButtonDiv">
+          <a href="/#/">
+            <button id="returnButton"  v-if="activeRound === 5">
+              <h3> {{ labels.return }} </h3>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -748,9 +755,29 @@ footer a:visited {
   vertical-align: middle;
 }
 
+#returnButtonDiv {
+  margin: 4.5em 0 0 0;
+}
+
+#returnButton {
+  height: 4em;
+  width: 20em;
+  border-radius: 10px;
+  padding: 0 0 4.5em 0;
+  background: radial-gradient(#fffea8, #fffecf);
+}
+
+#returnButton h3 {
+  font-size: 1.5em;
+}
+
+.winnerNames {
+  margin: 4em 0 0 0;
+}
+
 @keyframes winner {
   from {top: 0;}
-  to {top: 85em;}
+  to {top: 55em;}
 }
 
 @keyframes winnerDivBorderAnimation {
@@ -1016,7 +1043,7 @@ footer a:visited {
   transition-timing-function: ease-in-out;
 }
 
-.function_buttons:hover,.ready:hover{
+.function_buttons:hover,.ready:hover {
   transform: scale(1.05);
   transition: 0.15s;
   transition-timing-function: ease-in-out;
