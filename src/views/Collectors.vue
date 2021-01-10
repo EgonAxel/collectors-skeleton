@@ -96,6 +96,10 @@
           </button>
         </div>
         <div class="buttons">
+          <button class="function_buttons" v-on:click="myTutorial()">{{ labels.tutorial }}
+          </button>
+        </div>
+        <div class="buttons">
           <button class="function_buttons">
             {{ labels.rules }}
               <a href="/rules_collectors.pdf" target="_blank">
@@ -453,6 +457,12 @@ export default {
         },
 
 methods: {
+  myTutorial: function() {
+    window.open(
+    'https://youtube.com',
+    '_blank' // <- This is what makes it open in a new window.
+  );
+},
   readyGame: function() {
     this.$store.state.socket.emit('collectorsPlayerReady', {
       playerId: this.playerId,
